@@ -6,6 +6,12 @@ export const projectMediaCollectionType = defineType({
   type: 'document',
   fields: [
     defineField({
+      name: 'name',
+      title: 'Collection Name',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: 'type',
       title: 'Collection type',
       type: 'string',
@@ -14,7 +20,7 @@ export const projectMediaCollectionType = defineType({
           {title: 'Single', value: 'single'},
           {title: 'Before / After', value: 'before-after'},
         ],
-        layout: "dropdown"
+        layout: 'dropdown',
       },
       validation: (Rule) =>
         Rule.required().custom((value) =>
@@ -22,11 +28,6 @@ export const projectMediaCollectionType = defineType({
             ? true
             : 'Select a valid collection type',
         ),
-    }),
-    defineField({
-      name: 'id',
-      type: 'string',
-      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'media',

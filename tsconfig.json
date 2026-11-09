@@ -5,6 +5,9 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
+    "paths": {
+      "@/types/portfolio": ["../zhizhovski-bygg-web/src/types/portfolio.ts"]
+    },
     "forceConsistentCasingInFileNames": true,
     "module": "Preserve",
     "moduleDetection": "force",

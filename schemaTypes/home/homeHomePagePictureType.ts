@@ -1,9 +1,9 @@
-import {defineField} from 'sanity'
+import {defineField, defineType} from 'sanity'
 
-export const homeHomePagePictureType = {
+export const homeHomePagePictureType = defineType({
   name: "homeHomePagePictureType",
   title: "Bilde (Hjem-siden)",
-  type: "image",
+  type: "document",
   fields: [
     defineField({
       name: "image",
@@ -15,4 +15,4 @@ export const homeHomePagePictureType = {
       validation: (Rule) => Rule.required().error('Du må legge til et bilde.'),
     })
   ]
-}
+})

@@ -1,4 +1,4 @@
-import {SERVICE_CATEGORIES} from '../../zhizhovski-bygg-web/src/data/services'
+import {SERVICE_CATEGORIES} from '../../../zhizhovski-bygg-web/src/data/services'
 
 export const SERVICE_CATEGORY_OPTIONS = SERVICE_CATEGORIES.map((category) => ({
   title: category.title,

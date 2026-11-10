@@ -2,7 +2,7 @@
 
 ## Shared service definitions
 
-The category and service choices in `schemaTypes/serviceOptions.ts` are imported
+The category and service choices in `schemaTypes/projects/serviceOptions.ts` are imported
 from `../zhizhovski-bygg-web/src/data/services.ts`. Update `SERVICE_CATEGORIES`
 in the web project to change these choices, then rebuild or redeploy the Studio.
 Keep both repositories checked out next to each other with these directory names

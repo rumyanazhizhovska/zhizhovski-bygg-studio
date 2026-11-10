@@ -15,4 +15,14 @@ export default defineConfig({
   schema: {
     types: schemaTypes,
   },
+
+  document: {
+    singletons: [
+      'homeHomePagePictureType',
+      'aboutUsPageBeginingType',
+      'aboutUsOurHistoryType',
+      'aboutUsSectionType',
+      'aboutUsPrinciplesType'
+    ],
+  },
 })
